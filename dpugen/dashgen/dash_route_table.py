@@ -103,6 +103,8 @@ class OutRouteRules(ConfBase):
                 raise Exception('ACL_MAPPED_PER_NSG <%d> cannot be < 0' % p.ACL_MAPPED_PER_NSG)
             
             added_route_count = 0
+            # HEY COMMENT OUT BEGINS HERE
+            """
             for table_index in range(p.ACL_NSG_COUNT * 2):  # Per outbound group (5)
                 IP_R_START_nsg = IP_R_START_eni + ip_int.IP_STEP_NSG * table_index
                 for acl_index in range(0, p.ACL_RULES_NSG, 2):  # Per even rule (1000 / 2)
@@ -140,6 +142,8 @@ class OutRouteRules(ConfBase):
                                 'OP': 'SET'
                             }
                     added_route_count += len(routes)
+            """
+            # HEY COMMENT OUT ENDs HERE
 
             # add a default route if no route was added to current ENI'
             if added_route_count == 0:

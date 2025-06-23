@@ -43,7 +43,7 @@ class DashConfig(ConfBase):
     def generate_maps(self):
         # Pass top-level params to sub-generators.
         self.configs = [
-            dpugen.dashgen.dash_vnet_mapping_table.VnetMappings(self.params_dict),
+            # dpugen.dashgen.dash_vnet_mapping_table.VnetMappings(self.params_dict),
             dpugen.dashgen.dash_pl_mapping_table.PlMappings(self.params_dict),
             dpugen.dashgen.dash_eni_route_table.EniRoute(self.params_dict)
         ]
