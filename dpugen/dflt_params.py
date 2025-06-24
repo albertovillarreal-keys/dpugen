@@ -27,7 +27,7 @@ dflt_params = {                        # CONFIG VALUE             # DEFAULT VALU
     'MAC_R_START':                      '00:1B:6E:00:00:01',
 
     'MAC_STEP_ENI':                     '00:00:00:18:00:00',       # '00:00:00:18:00:00'
-    'MAC_STEP_NSG':                     '00:00:00:02:00:00',
+    'MAC_STEP_NSG':                     '00:00:00:00:00:80',
     'MAC_STEP_ACL':                     '00:00:00:00:01:00',
 
     'IP_L_START':                       '1.1.0.1',                 # local, eni
